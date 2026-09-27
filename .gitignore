@@ -10,3 +10,6 @@ reel/public/*/*.wav
 reel/public/fonts/*
 !reel/public/fonts/README.md
 reel/public/demo/
+__pycache__/
+reel/public/*/_*
+reel/public/source/
