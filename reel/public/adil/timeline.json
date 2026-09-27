@@ -1,0 +1,2288 @@
+{
+ "id": "adil",
+ "fps": 30,
+ "durationInFrames": 2340,
+ "video": {
+  "src": "adil/cut.mp4",
+  "alpha": "adil/person_alpha.webm",
+  "width": 1214,
+  "height": 2160
+ },
+ "voice": "adil/voice.wav",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 3.5333
+  },
+  {
+   "start": 3.5333,
+   "end": 17.2
+  },
+  {
+   "start": 17.2,
+   "end": 21.0
+  },
+  {
+   "start": 21.0,
+   "end": 32.5334
+  },
+  {
+   "start": 32.5334,
+   "end": 34.7668
+  },
+  {
+   "start": 34.7668,
+   "end": 36.5002
+  },
+  {
+   "start": 36.5002,
+   "end": 37.4335
+  },
+  {
+   "start": 37.4335,
+   "end": 39.3001
+  },
+  {
+   "start": 39.3001,
+   "end": 40.2001
+  },
+  {
+   "start": 40.2001,
+   "end": 41.9668
+  },
+  {
+   "start": 41.9668,
+   "end": 43.9001
+  },
+  {
+   "start": 43.9001,
+   "end": 45.1668
+  },
+  {
+   "start": 45.1668,
+   "end": 72.1668
+  },
+  {
+   "start": 72.1668,
+   "end": 75.7668
+  },
+  {
+   "start": 75.7668,
+   "end": 76.6335
+  },
+  {
+   "start": 76.6335,
+   "end": 77.4002
+  },
+  {
+   "start": 77.4002,
+   "end": 78.0669
+  }
+ ],
+ "words": [
+  {
+   "w": "فالمقاولة",
+   "start": 0.0,
+   "end": 0.382
+  },
+  {
+   "w": "ملي",
+   "start": 0.382,
+   "end": 0.765
+  },
+  {
+   "w": "كتشري",
+   "start": 0.765,
+   "end": 1.148
+  },
+  {
+   "w": "واحد",
+   "start": 1.148,
+   "end": 1.53
+  },
+  {
+   "w": "الماشينة",
+   "start": 1.53,
+   "end": 1.912
+  },
+  {
+   "w": "ولا",
+   "start": 1.912,
+   "end": 2.295
+  },
+  {
+   "w": "ماطيريال",
+   "start": 2.295,
+   "end": 2.678
+  },
+  {
+   "w": "اللي",
+   "start": 2.678,
+   "end": 3.06
+  },
+  {
+   "w": "تكون",
+   "start": 3.06,
+   "end": 3.28
+  },
+  {
+   "w": "خدامة",
+   "start": 3.28,
+   "end": 3.99
+  },
+  {
+   "w": "مزيان",
+   "start": 3.99,
+   "end": 4.7
+  },
+  {
+   "w": "وكتعطيك",
+   "start": 4.7,
+   "end": 5.41
+  },
+  {
+   "w": "الإنتاج،",
+   "start": 5.41,
+   "end": 6.12
+  },
+  {
+   "w": "أول",
+   "start": 6.12,
+   "end": 6.34
+  },
+  {
+   "w": "حاجة",
+   "start": 6.34,
+   "end": 7.113
+  },
+  {
+   "w": "كيعلمها",
+   "start": 7.113,
+   "end": 7.887
+  },
+  {
+   "w": "ليك",
+   "start": 7.887,
+   "end": 8.66
+  },
+  {
+   "w": "المحاسب",
+   "start": 8.66,
+   "end": 8.99
+  },
+  {
+   "w": "هي",
+   "start": 8.99,
+   "end": 9.32
+  },
+  {
+   "w": "أنه",
+   "start": 9.32,
+   "end": 9.5
+  },
+  {
+   "w": "غادي",
+   "start": 9.5,
+   "end": 9.68
+  },
+  {
+   "w": "نحسبو",
+   "start": 9.68,
+   "end": 9.86
+  },
+  {
+   "w": "ليها",
+   "start": 9.86,
+   "end": 10.04
+  },
+  {
+   "w": "الأمورتيسمون",
+   "start": 10.04,
+   "end": 10.22
+  },
+  {
+   "w": "ديالها،",
+   "start": 10.22,
+   "end": 10.4
+  },
+  {
+   "w": "درجة",
+   "start": 10.4,
+   "end": 11.59
+  },
+  {
+   "w": "الإهلاك،",
+   "start": 11.59,
+   "end": 12.78
+  },
+  {
+   "w": "كيفاش",
+   "start": 12.78,
+   "end": 13.13
+  },
+  {
+   "w": "كتنقص",
+   "start": 13.13,
+   "end": 13.48
+  },
+  {
+   "w": "القيمة",
+   "start": 13.48,
+   "end": 13.94
+  },
+  {
+   "w": "ديال",
+   "start": 13.94,
+   "end": 14.17
+  },
+  {
+   "w": "هاد",
+   "start": 14.17,
+   "end": 14.4
+  },
+  {
+   "w": "الأصل",
+   "start": 14.4,
+   "end": 14.72
+  },
+  {
+   "w": "مع",
+   "start": 14.72,
+   "end": 15.04
+  },
+  {
+   "w": "الوقت.",
+   "start": 15.04,
+   "end": 15.42
+  },
+  {
+   "w": "ولكن",
+   "start": 15.42,
+   "end": 15.64
+  },
+  {
+   "w": "كاين",
+   "start": 15.64,
+   "end": 15.99
+  },
+  {
+   "w": "واحد",
+   "start": 15.99,
+   "end": 16.34
+  },
+  {
+   "w": "الأصل",
+   "start": 16.34,
+   "end": 16.69
+  },
+  {
+   "w": "فالشركة",
+   "start": 16.69,
+   "end": 17.04
+  },
+  {
+   "w": "ما",
+   "start": 17.04,
+   "end": 17.39
+  },
+  {
+   "w": "عندناش",
+   "start": 17.39,
+   "end": 17.74
+  },
+  {
+   "w": "طريقة",
+   "start": 17.74,
+   "end": 18.18
+  },
+  {
+   "w": "باش",
+   "start": 18.18,
+   "end": 18.728
+  },
+  {
+   "w": "نحسبو",
+   "start": 18.728,
+   "end": 19.276
+  },
+  {
+   "w": "ليه",
+   "start": 19.276,
+   "end": 19.824
+  },
+  {
+   "w": "الأمورتيسمون",
+   "start": 19.824,
+   "end": 20.372
+  },
+  {
+   "w": "ديالو،",
+   "start": 20.372,
+   "end": 20.92
+  },
+  {
+   "w": "وهو",
+   "start": 20.92,
+   "end": 21.32
+  },
+  {
+   "w": "نتا",
+   "start": 21.32,
+   "end": 21.85
+  },
+  {
+   "w": "كمقاول.",
+   "start": 21.85,
+   "end": 22.38
+  },
+  {
+   "w": "فالمقاولة",
+   "start": 22.38,
+   "end": 23.12
+  },
+  {
+   "w": "إلا",
+   "start": 23.12,
+   "end": 23.46
+  },
+  {
+   "w": "كانت",
+   "start": 23.46,
+   "end": 23.76
+  },
+  {
+   "w": "كتكبر،",
+   "start": 23.76,
+   "end": 24.176
+  },
+  {
+   "w": "والشيفر",
+   "start": 24.176,
+   "end": 24.592
+  },
+  {
+   "w": "دافير",
+   "start": 24.592,
+   "end": 25.008
+  },
+  {
+   "w": "ديالك",
+   "start": 25.008,
+   "end": 25.424
+  },
+  {
+   "w": "كيكبر،",
+   "start": 25.424,
+   "end": 25.84
+  },
+  {
+   "w": "والنمو",
+   "start": 25.84,
+   "end": 26.28
+  },
+  {
+   "w": "والمشاكل",
+   "start": 26.28,
+   "end": 26.688
+  },
+  {
+   "w": "كيكبرو",
+   "start": 26.688,
+   "end": 27.096
+  },
+  {
+   "w": "معاك،",
+   "start": 27.096,
+   "end": 27.1
+  },
+  {
+   "w": "كيتزاد",
+   "start": 27.1,
+   "end": 27.5
+  },
+  {
+   "w": "ليك،",
+   "start": 27.5,
+   "end": 27.9
+  },
+  {
+   "w": "كيتزاد",
+   "start": 27.9,
+   "end": 28.3
+  },
+  {
+   "w": "ليك،",
+   "start": 28.3,
+   "end": 28.7
+  },
+  {
+   "w": "كيتزاد",
+   "start": 28.7,
+   "end": 29.1
+  },
+  {
+   "w": "ليك،",
+   "start": 29.1,
+   "end": 29.5
+  },
+  {
+   "w": "كيتزاد",
+   "start": 29.5,
+   "end": 29.9
+  },
+  {
+   "w": "ليك،",
+   "start": 29.9,
+   "end": 30.3
+  },
+  {
+   "w": "كيتزاد",
+   "start": 30.3,
+   "end": 30.7
+  },
+  {
+   "w": "ليك،",
+   "start": 30.7,
+   "end": 31.1
+  },
+  {
+   "w": "كيتزاد",
+   "start": 31.1,
+   "end": 31.5
+  },
+  {
+   "w": "ليك،",
+   "start": 31.5,
+   "end": 31.9
+  },
+  {
+   "w": "فهادشي",
+   "start": 31.94,
+   "end": 32.463
+  },
+  {
+   "w": "كيخلق",
+   "start": 32.463,
+   "end": 32.986
+  },
+  {
+   "w": "لينا",
+   "start": 32.986,
+   "end": 33.509
+  },
+  {
+   "w": "نمو",
+   "start": 33.509,
+   "end": 34.031
+  },
+  {
+   "w": "ماشي",
+   "start": 34.031,
+   "end": 34.554
+  },
+  {
+   "w": "صحي",
+   "start": 34.554,
+   "end": 35.077
+  },
+  {
+   "w": "للمقاولة.",
+   "start": 35.077,
+   "end": 35.6
+  },
+  {
+   "w": "ولكن",
+   "start": 35.687,
+   "end": 36.4
+  },
+  {
+   "w": "اللي",
+   "start": 36.4,
+   "end": 36.74
+  },
+  {
+   "w": "بغينا",
+   "start": 36.74,
+   "end": 37.08
+  },
+  {
+   "w": "هو",
+   "start": 37.08,
+   "end": 37.51
+  },
+  {
+   "w": "أنه",
+   "start": 37.51,
+   "end": 37.94
+  },
+  {
+   "w": "التزايد",
+   "start": 37.94,
+   "end": 38.35
+  },
+  {
+   "w": "ديال",
+   "start": 38.35,
+   "end": 38.76
+  },
+  {
+   "w": "النمو",
+   "start": 38.76,
+   "end": 39.22
+  },
+  {
+   "w": "فالمقاولة",
+   "start": 39.22,
+   "end": 40.1
+  },
+  {
+   "w": "يكون",
+   "start": 40.1,
+   "end": 40.973
+  },
+  {
+   "w": "مقابل",
+   "start": 40.973,
+   "end": 41.847
+  },
+  {
+   "w": "درجة",
+   "start": 41.847,
+   "end": 42.72
+  },
+  {
+   "w": "إهلاك",
+   "start": 42.72,
+   "end": 43.28
+  },
+  {
+   "w": "كتنقص",
+   "start": 43.28,
+   "end": 43.84
+  },
+  {
+   "w": "على",
+   "start": 43.84,
+   "end": 44.46
+  },
+  {
+   "w": "المقاول.",
+   "start": 44.46,
+   "end": 45.08
+  },
+  {
+   "w": "تفوض",
+   "start": 45.08,
+   "end": 45.73
+  },
+  {
+   "w": "البروسيس:",
+   "start": 45.73,
+   "end": 46.38
+  },
+  {
+   "w": "المشكل",
+   "start": 46.38,
+   "end": 47.03
+  },
+  {
+   "w": "فالمرة",
+   "start": 47.03,
+   "end": 47.68
+  },
+  {
+   "w": "الأولى",
+   "start": 47.68,
+   "end": 48.02
+  },
+  {
+   "w": "كتحلو،",
+   "start": 48.02,
+   "end": 49.52
+  },
+  {
+   "w": "المرة",
+   "start": 49.52,
+   "end": 49.84
+  },
+  {
+   "w": "الثانية",
+   "start": 49.84,
+   "end": 50.16
+  },
+  {
+   "w": "كتأكد",
+   "start": 50.16,
+   "end": 51.0
+  },
+  {
+   "w": "الطريقة",
+   "start": 51.0,
+   "end": 51.42
+  },
+  {
+   "w": "ديال",
+   "start": 51.42,
+   "end": 52.35
+  },
+  {
+   "w": "الحل،",
+   "start": 52.35,
+   "end": 53.28
+  },
+  {
+   "w": "المرة",
+   "start": 53.28,
+   "end": 53.62
+  },
+  {
+   "w": "الثالثة",
+   "start": 53.62,
+   "end": 53.96
+  },
+  {
+   "w": "كتعلم",
+   "start": 53.96,
+   "end": 54.317
+  },
+  {
+   "w": "شخص",
+   "start": 54.317,
+   "end": 54.673
+  },
+  {
+   "w": "باش",
+   "start": 54.673,
+   "end": 55.03
+  },
+  {
+   "w": "تفوض",
+   "start": 55.03,
+   "end": 55.387
+  },
+  {
+   "w": "ليه",
+   "start": 55.387,
+   "end": 55.743
+  },
+  {
+   "w": "هاد",
+   "start": 55.743,
+   "end": 56.1
+  },
+  {
+   "w": "الطريقة",
+   "start": 56.1,
+   "end": 56.64
+  },
+  {
+   "w": "وتعطيه",
+   "start": 56.64,
+   "end": 57.08
+  },
+  {
+   "w": "لافورماسيون",
+   "start": 57.08,
+   "end": 57.52
+  },
+  {
+   "w": "باش",
+   "start": 57.52,
+   "end": 57.96
+  },
+  {
+   "w": "يحل",
+   "start": 57.96,
+   "end": 58.4
+  },
+  {
+   "w": "هاد",
+   "start": 58.4,
+   "end": 58.84
+  },
+  {
+   "w": "المشكل.",
+   "start": 58.84,
+   "end": 59.36
+  },
+  {
+   "w": "ماشي",
+   "start": 59.36,
+   "end": 59.94
+  },
+  {
+   "w": "نتا",
+   "start": 59.94,
+   "end": 60.52
+  },
+  {
+   "w": "تحل",
+   "start": 60.52,
+   "end": 61.1
+  },
+  {
+   "w": "نفس",
+   "start": 61.1,
+   "end": 61.49
+  },
+  {
+   "w": "المشكل",
+   "start": 61.49,
+   "end": 61.88
+  },
+  {
+   "w": "30",
+   "start": 61.88,
+   "end": 62.196
+  },
+  {
+   "w": "سنة،",
+   "start": 62.196,
+   "end": 62.512
+  },
+  {
+   "w": "وتقول",
+   "start": 62.512,
+   "end": 62.828
+  },
+  {
+   "w": "ليك",
+   "start": 62.828,
+   "end": 63.144
+  },
+  {
+   "w": "كنحل",
+   "start": 63.144,
+   "end": 63.46
+  },
+  {
+   "w": "مليون",
+   "start": 63.46,
+   "end": 63.82
+  },
+  {
+   "w": "مشكل",
+   "start": 63.82,
+   "end": 64.18
+  },
+  {
+   "w": "فالمقاولة",
+   "start": 64.18,
+   "end": 64.86
+  },
+  {
+   "w": "كل",
+   "start": 64.86,
+   "end": 65.06
+  },
+  {
+   "w": "نهار،",
+   "start": 65.06,
+   "end": 65.44
+  },
+  {
+   "w": "فإنما",
+   "start": 65.44,
+   "end": 65.82
+  },
+  {
+   "w": "كتحل",
+   "start": 65.82,
+   "end": 66.26
+  },
+  {
+   "w": "واحد",
+   "start": 66.26,
+   "end": 66.55
+  },
+  {
+   "w": "المشكل",
+   "start": 66.55,
+   "end": 66.84
+  },
+  {
+   "w": "كيتكرر",
+   "start": 66.84,
+   "end": 67.44
+  },
+  {
+   "w": "عليك",
+   "start": 67.44,
+   "end": 67.62
+  },
+  {
+   "w": "30",
+   "start": 67.62,
+   "end": 67.96
+  },
+  {
+   "w": "سنة.",
+   "start": 67.96,
+   "end": 68.36
+  },
+  {
+   "w": "هذا",
+   "start": 68.36,
+   "end": 68.76
+  },
+  {
+   "w": "هو",
+   "start": 68.76,
+   "end": 69.16
+  },
+  {
+   "w": "الإشكال.",
+   "start": 69.16,
+   "end": 69.56
+  },
+  {
+   "w": "لذلك",
+   "start": 69.56,
+   "end": 69.96
+  },
+  {
+   "w": "باش",
+   "start": 69.96,
+   "end": 70.2
+  },
+  {
+   "w": "يكون",
+   "start": 70.2,
+   "end": 70.32
+  },
+  {
+   "w": "عندنا",
+   "start": 70.32,
+   "end": 70.64
+  },
+  {
+   "w": "نمو",
+   "start": 70.64,
+   "end": 70.96
+  },
+  {
+   "w": "صحي",
+   "start": 70.96,
+   "end": 71.28
+  },
+  {
+   "w": "فالمقاولة،",
+   "start": 71.28,
+   "end": 72.04
+  },
+  {
+   "w": "خاص",
+   "start": 72.04,
+   "end": 72.57
+  },
+  {
+   "w": "النمو",
+   "start": 72.57,
+   "end": 73.1
+  },
+  {
+   "w": "يكبر",
+   "start": 73.1,
+   "end": 73.63
+  },
+  {
+   "w": "والإهلاك",
+   "start": 73.63,
+   "end": 74.16
+  },
+  {
+   "w": "يقلال،",
+   "start": 74.16,
+   "end": 74.75
+  },
+  {
+   "w": "باش",
+   "start": 74.75,
+   "end": 75.34
+  },
+  {
+   "w": "ما",
+   "start": 75.34,
+   "end": 75.93
+  },
+  {
+   "w": "نبقاوش",
+   "start": 75.93,
+   "end": 76.52
+  },
+  {
+   "w": "مع",
+   "start": 76.52,
+   "end": 77.027
+  },
+  {
+   "w": "مستر",
+   "start": 77.027,
+   "end": 77.533
+  },
+  {
+   "w": "بورناوت.",
+   "start": 77.533,
+   "end": 78.04
+  }
+ ],
+ "captions": [
+  {
+   "words": [
+    0,
+    1,
+    2
+   ],
+   "start": 0.0,
+   "end": 1.148,
+   "en": "WHEN YOUR BUSINESS BUYS A «MACHINE» THAT PRODUCES"
+  },
+  {
+   "words": [
+    3,
+    4,
+    5
+   ],
+   "start": 1.148,
+   "end": 2.295,
+   "en": "WHEN YOUR BUSINESS BUYS A «MACHINE» THAT PRODUCES"
+  },
+  {
+   "words": [
+    6,
+    7,
+    8
+   ],
+   "start": 2.295,
+   "end": 3.28,
+   "en": "WHEN YOUR BUSINESS BUYS A «MACHINE» THAT PRODUCES"
+  },
+  {
+   "words": [
+    9,
+    10,
+    11
+   ],
+   "start": 3.28,
+   "end": 5.41,
+   "en": "WHEN YOUR BUSINESS BUYS A «MACHINE» THAT PRODUCES"
+  },
+  {
+   "words": [
+    12
+   ],
+   "start": 5.41,
+   "end": 6.12,
+   "en": "WHEN YOUR BUSINESS BUYS A «MACHINE» THAT PRODUCES"
+  },
+  {
+   "words": [
+    13,
+    14,
+    15
+   ],
+   "start": 6.12,
+   "end": 7.887,
+   "en": "THE ACCOUNTANT'S FIRST LESSON: ITS «DEPRECIATION»"
+  },
+  {
+   "words": [
+    16,
+    17,
+    18
+   ],
+   "start": 7.887,
+   "end": 9.32,
+   "en": "THE ACCOUNTANT'S FIRST LESSON: ITS «DEPRECIATION»"
+  },
+  {
+   "words": [
+    19,
+    20,
+    21
+   ],
+   "start": 9.32,
+   "end": 9.86,
+   "en": "THE ACCOUNTANT'S FIRST LESSON: ITS «DEPRECIATION»"
+  },
+  {
+   "words": [
+    22,
+    23,
+    24
+   ],
+   "start": 9.86,
+   "end": 10.4,
+   "en": "THE ACCOUNTANT'S FIRST LESSON: ITS «DEPRECIATION»"
+  },
+  {
+   "words": [
+    25,
+    26
+   ],
+   "start": 10.4,
+   "end": 12.78,
+   "en": "THE «DEPRECIATION» RATE"
+  },
+  {
+   "words": [
+    27,
+    28,
+    29
+   ],
+   "start": 12.78,
+   "end": 13.94,
+   "en": "HOW THE ASSET LOSES «VALUE» OVER TIME"
+  },
+  {
+   "words": [
+    30,
+    31,
+    32
+   ],
+   "start": 13.94,
+   "end": 14.72,
+   "en": "HOW THE ASSET LOSES «VALUE» OVER TIME"
+  },
+  {
+   "words": [
+    33,
+    34
+   ],
+   "start": 14.72,
+   "end": 15.42,
+   "en": "HOW THE ASSET LOSES «VALUE» OVER TIME"
+  },
+  {
+   "words": [
+    35,
+    36,
+    37
+   ],
+   "start": 15.42,
+   "end": 16.34,
+   "en": "BUT ONE ASSET HAS NO «FORMULA» FOR ITS DEPRECIATION"
+  },
+  {
+   "words": [
+    38,
+    39,
+    40
+   ],
+   "start": 16.34,
+   "end": 17.39,
+   "en": "BUT ONE ASSET HAS NO «FORMULA» FOR ITS DEPRECIATION"
+  },
+  {
+   "words": [
+    41,
+    42,
+    43
+   ],
+   "start": 17.39,
+   "end": 18.728,
+   "en": "BUT ONE ASSET HAS NO «FORMULA» FOR ITS DEPRECIATION"
+  },
+  {
+   "words": [
+    44,
+    45,
+    46
+   ],
+   "start": 18.728,
+   "end": 20.372,
+   "en": "BUT ONE ASSET HAS NO «FORMULA» FOR ITS DEPRECIATION"
+  },
+  {
+   "words": [
+    47
+   ],
+   "start": 20.372,
+   "end": 20.92,
+   "en": "BUT ONE ASSET HAS NO «FORMULA» FOR ITS DEPRECIATION"
+  },
+  {
+   "words": [
+    48,
+    49,
+    50
+   ],
+   "start": 20.92,
+   "end": 22.38,
+   "en": "AND THAT'S «YOU», THE ENTREPRENEUR"
+  },
+  {
+   "words": [
+    51,
+    52,
+    53
+   ],
+   "start": 22.38,
+   "end": 23.76,
+   "en": "WHEN THE BUSINESS IS «GROWING»"
+  },
+  {
+   "words": [
+    54
+   ],
+   "start": 23.76,
+   "end": 24.176,
+   "en": "WHEN THE BUSINESS IS «GROWING»"
+  },
+  {
+   "words": [
+    55,
+    56,
+    57
+   ],
+   "start": 24.176,
+   "end": 25.424,
+   "en": "YOUR «REVENUE» GROWS"
+  },
+  {
+   "words": [
+    58
+   ],
+   "start": 25.424,
+   "end": 25.84,
+   "en": "YOUR «REVENUE» GROWS"
+  },
+  {
+   "words": [
+    59,
+    60,
+    61
+   ],
+   "start": 25.84,
+   "end": 27.096,
+   "en": "GROWTH AND «PROBLEMS» GROW WITH YOU"
+  },
+  {
+   "words": [
+    62
+   ],
+   "start": 27.096,
+   "end": 27.1,
+   "en": "GROWTH AND «PROBLEMS» GROW WITH YOU"
+  },
+  {
+   "words": [
+    63,
+    64
+   ],
+   "start": 27.1,
+   "end": 27.9,
+   "en": "IT KEEPS «PILING UP»"
+  },
+  {
+   "words": [
+    65,
+    66
+   ],
+   "start": 27.9,
+   "end": 28.7,
+   "en": "IT KEEPS «PILING UP»"
+  },
+  {
+   "words": [
+    67,
+    68
+   ],
+   "start": 28.7,
+   "end": 29.5,
+   "en": "IT KEEPS «PILING UP»"
+  },
+  {
+   "words": [
+    69,
+    70
+   ],
+   "start": 29.5,
+   "end": 30.3,
+   "en": "IT KEEPS «PILING UP»"
+  },
+  {
+   "words": [
+    71,
+    72
+   ],
+   "start": 30.3,
+   "end": 31.1,
+   "en": "IT KEEPS «PILING UP»"
+  },
+  {
+   "words": [
+    73,
+    74
+   ],
+   "start": 31.1,
+   "end": 31.94,
+   "en": "IT KEEPS «PILING UP»"
+  },
+  {
+   "words": [
+    75,
+    76,
+    77
+   ],
+   "start": 31.94,
+   "end": 33.509,
+   "en": "THAT CREATES «UNHEALTHY» GROWTH"
+  },
+  {
+   "words": [
+    78,
+    79,
+    80
+   ],
+   "start": 33.509,
+   "end": 35.077,
+   "en": "THAT CREATES «UNHEALTHY» GROWTH"
+  },
+  {
+   "words": [
+    81
+   ],
+   "start": 35.077,
+   "end": 35.687,
+   "en": "THAT CREATES «UNHEALTHY» GROWTH"
+  },
+  {
+   "words": [
+    82,
+    83,
+    84
+   ],
+   "start": 35.687,
+   "end": 37.08,
+   "en": "WE WANT GROWTH WHILE THE FOUNDER'S «WEAR» GOES DOWN"
+  },
+  {
+   "words": [
+    85,
+    86,
+    87
+   ],
+   "start": 37.08,
+   "end": 38.35,
+   "en": "WE WANT GROWTH WHILE THE FOUNDER'S «WEAR» GOES DOWN"
+  },
+  {
+   "words": [
+    88,
+    89,
+    90
+   ],
+   "start": 38.35,
+   "end": 40.1,
+   "en": "WE WANT GROWTH WHILE THE FOUNDER'S «WEAR» GOES DOWN"
+  },
+  {
+   "words": [
+    91,
+    92,
+    93
+   ],
+   "start": 40.1,
+   "end": 42.72,
+   "en": "WE WANT GROWTH WHILE THE FOUNDER'S «WEAR» GOES DOWN"
+  },
+  {
+   "words": [
+    94,
+    95,
+    96
+   ],
+   "start": 42.72,
+   "end": 44.46,
+   "en": "WE WANT GROWTH WHILE THE FOUNDER'S «WEAR» GOES DOWN"
+  },
+  {
+   "words": [
+    97
+   ],
+   "start": 44.46,
+   "end": 45.08,
+   "en": "WE WANT GROWTH WHILE THE FOUNDER'S «WEAR» GOES DOWN"
+  },
+  {
+   "words": [
+    98,
+    99,
+    100
+   ],
+   "start": 45.08,
+   "end": 47.03,
+   "en": "«DELEGATE» THE PROCESS: 1ST TIME, YOU SOLVE IT"
+  },
+  {
+   "words": [
+    101,
+    102,
+    103
+   ],
+   "start": 47.03,
+   "end": 49.52,
+   "en": "«DELEGATE» THE PROCESS: 1ST TIME, YOU SOLVE IT"
+  },
+  {
+   "words": [
+    104,
+    105,
+    106
+   ],
+   "start": 49.52,
+   "end": 51.0,
+   "en": "2ND TIME, YOU «CONFIRM» THE SOLUTION"
+  },
+  {
+   "words": [
+    107,
+    108,
+    109
+   ],
+   "start": 51.0,
+   "end": 53.28,
+   "en": "2ND TIME, YOU «CONFIRM» THE SOLUTION"
+  },
+  {
+   "words": [
+    110,
+    111,
+    112
+   ],
+   "start": 53.28,
+   "end": 54.317,
+   "en": "3RD TIME, YOU «TRAIN» SOMEONE TO SOLVE IT"
+  },
+  {
+   "words": [
+    113,
+    114,
+    115
+   ],
+   "start": 54.317,
+   "end": 55.387,
+   "en": "3RD TIME, YOU «TRAIN» SOMEONE TO SOLVE IT"
+  },
+  {
+   "words": [
+    116,
+    117,
+    118
+   ],
+   "start": 55.387,
+   "end": 56.64,
+   "en": "3RD TIME, YOU «TRAIN» SOMEONE TO SOLVE IT"
+  },
+  {
+   "words": [
+    119,
+    120,
+    121
+   ],
+   "start": 56.64,
+   "end": 57.96,
+   "en": "3RD TIME, YOU «TRAIN» SOMEONE TO SOLVE IT"
+  },
+  {
+   "words": [
+    122,
+    123,
+    124
+   ],
+   "start": 57.96,
+   "end": 59.36,
+   "en": "3RD TIME, YOU «TRAIN» SOMEONE TO SOLVE IT"
+  },
+  {
+   "words": [
+    125,
+    126,
+    127
+   ],
+   "start": 59.36,
+   "end": 61.1,
+   "en": "NOT YOU SOLVING THE «SAME PROBLEM» FOR 30 YEARS"
+  },
+  {
+   "words": [
+    128,
+    129,
+    130
+   ],
+   "start": 61.1,
+   "end": 62.196,
+   "en": "NOT YOU SOLVING THE «SAME PROBLEM» FOR 30 YEARS"
+  },
+  {
+   "words": [
+    131
+   ],
+   "start": 62.196,
+   "end": 62.512,
+   "en": "NOT YOU SOLVING THE «SAME PROBLEM» FOR 30 YEARS"
+  },
+  {
+   "words": [
+    132,
+    133,
+    134
+   ],
+   "start": 62.512,
+   "end": 63.46,
+   "en": "YOU THINK YOU SOLVE A «MILLION» PROBLEMS A DAY"
+  },
+  {
+   "words": [
+    135,
+    136,
+    137
+   ],
+   "start": 63.46,
+   "end": 64.86,
+   "en": "YOU THINK YOU SOLVE A «MILLION» PROBLEMS A DAY"
+  },
+  {
+   "words": [
+    138,
+    139
+   ],
+   "start": 64.86,
+   "end": 65.44,
+   "en": "YOU THINK YOU SOLVE A «MILLION» PROBLEMS A DAY"
+  },
+  {
+   "words": [
+    140,
+    141,
+    142
+   ],
+   "start": 65.44,
+   "end": 66.55,
+   "en": "IT'S ONE PROBLEM «REPEATING» FOR 30 YEARS"
+  },
+  {
+   "words": [
+    143,
+    144,
+    145
+   ],
+   "start": 66.55,
+   "end": 67.62,
+   "en": "IT'S ONE PROBLEM «REPEATING» FOR 30 YEARS"
+  },
+  {
+   "words": [
+    146,
+    147
+   ],
+   "start": 67.62,
+   "end": 68.36,
+   "en": "IT'S ONE PROBLEM «REPEATING» FOR 30 YEARS"
+  },
+  {
+   "words": [
+    148,
+    149,
+    150
+   ],
+   "start": 68.36,
+   "end": 69.56,
+   "en": "THAT'S THE «REAL ISSUE»"
+  },
+  {
+   "words": [
+    151,
+    152,
+    153
+   ],
+   "start": 69.56,
+   "end": 70.32,
+   "en": "FOR «HEALTHY» GROWTH"
+  },
+  {
+   "words": [
+    154,
+    155,
+    156
+   ],
+   "start": 70.32,
+   "end": 71.28,
+   "en": "FOR «HEALTHY» GROWTH"
+  },
+  {
+   "words": [
+    157
+   ],
+   "start": 71.28,
+   "end": 72.04,
+   "en": "FOR «HEALTHY» GROWTH"
+  },
+  {
+   "words": [
+    158,
+    159,
+    160
+   ],
+   "start": 72.04,
+   "end": 73.63,
+   "en": "GROWTH GOES UP, YOUR «WEAR» GOES DOWN"
+  },
+  {
+   "words": [
+    161,
+    162
+   ],
+   "start": 73.63,
+   "end": 74.75,
+   "en": "GROWTH GOES UP, YOUR «WEAR» GOES DOWN"
+  },
+  {
+   "words": [
+    163,
+    164,
+    165
+   ],
+   "start": 74.75,
+   "end": 76.52,
+   "en": "SO WE DON'T MEET MISTER «BURNOUT»"
+  },
+  {
+   "words": [
+    166,
+    167,
+    168
+   ],
+   "start": 76.52,
+   "end": 78.0,
+   "en": "SO WE DON'T MEET MISTER «BURNOUT»"
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0.0,
+   "end": 3.533,
+   "bg": "original"
+  },
+  {
+   "start": 3.533,
+   "end": 6.12,
+   "bg": "orange",
+   "keyword": "MACHINE"
+  },
+  {
+   "start": 6.12,
+   "end": 10.4,
+   "bg": "dark",
+   "icons": [
+    "🧮",
+    "📄",
+    "⚙️",
+    "📉",
+    "🏭"
+   ]
+  },
+  {
+   "start": 10.4,
+   "end": 15.42,
+   "bg": "image",
+   "image": "adil/img/depreciation.jpg",
+   "label": "📉 الإهلاك"
+  },
+  {
+   "start": 15.42,
+   "end": 20.92,
+   "bg": "original"
+  },
+  {
+   "start": 20.92,
+   "end": 24.176,
+   "bg": "orange",
+   "keyword": "YOU"
+  },
+  {
+   "start": 24.176,
+   "end": 27.9,
+   "bg": "dark",
+   "icons": [
+    "📈",
+    "💼",
+    "⚠️",
+    "💰",
+    "👥"
+   ]
+  },
+  {
+   "start": 27.9,
+   "end": 31.94,
+   "bg": "light",
+   "path": [
+    "الشيفر",
+    "النمو",
+    "المشاكل"
+   ]
+  },
+  {
+   "start": 31.94,
+   "end": 35.687,
+   "bg": "image",
+   "image": "adil/img/unhealthy.jpg",
+   "label": "نمو ماشي صحي"
+  },
+  {
+   "start": 35.687,
+   "end": 39.3,
+   "bg": "orange",
+   "keyword": "GROWTH"
+  },
+  {
+   "start": 39.3,
+   "end": 43.9,
+   "bg": "dark",
+   "icons": [
+    "📈",
+    "📉",
+    "⚖️",
+    "🧑‍💼",
+    "🔋"
+   ]
+  },
+  {
+   "start": 43.9,
+   "end": 49.52,
+   "bg": "light",
+   "path": [
+    "كتحل",
+    "كتأكد",
+    "كتفوض"
+   ]
+  },
+  {
+   "start": 49.52,
+   "end": 53.28,
+   "bg": "original"
+  },
+  {
+   "start": 53.28,
+   "end": 59.36,
+   "bg": "orange",
+   "keyword": "DELEGATE"
+  },
+  {
+   "start": 59.36,
+   "end": 62.512,
+   "bg": "dark",
+   "icons": [
+    "🔁",
+    "⏳",
+    "🧩",
+    "📅",
+    "⚙️"
+   ]
+  },
+  {
+   "start": 62.512,
+   "end": 65.44,
+   "bg": "light",
+   "path": [
+    "مليون مشكل؟",
+    "نفس المشكل",
+    "30 سنة"
+   ]
+  },
+  {
+   "start": 65.44,
+   "end": 69.56,
+   "bg": "original"
+  },
+  {
+   "start": 69.56,
+   "end": 74.75,
+   "bg": "image",
+   "image": "adil/img/healthy.jpg",
+   "label": "نمو صحي ✅"
+  },
+  {
+   "start": 74.75,
+   "end": 78.0,
+   "bg": "orange",
+   "keyword": "BURNOUT"
+  }
+ ],
+ "pushes": [
+  {
+   "start": 0.0,
+   "end": 6.22
+  },
+  {
+   "start": 6.12,
+   "end": 10.5
+  },
+  {
+   "start": 12.78,
+   "end": 15.52
+  },
+  {
+   "start": 15.42,
+   "end": 21.02
+  },
+  {
+   "start": 20.92,
+   "end": 22.48
+  },
+  {
+   "start": 31.94,
+   "end": 35.7
+  },
+  {
+   "start": 35.687,
+   "end": 45.18
+  },
+  {
+   "start": 45.08,
+   "end": 49.62
+  },
+  {
+   "start": 49.52,
+   "end": 53.38
+  },
+  {
+   "start": 53.28,
+   "end": 59.46
+  },
+  {
+   "start": 59.36,
+   "end": 62.612
+  },
+  {
+   "start": 62.512,
+   "end": 65.54
+  },
+  {
+   "start": 65.44,
+   "end": 68.46
+  },
+  {
+   "start": 69.56,
+   "end": 72.14
+  },
+  {
+   "start": 72.04,
+   "end": 74.85
+  },
+  {
+   "start": 74.75,
+   "end": 78.14
+  }
+ ],
+ "annotations": [
+  {
+   "type": "chip",
+   "text": "ماشينة / ماطيريال",
+   "emoji": "⚙️",
+   "start": 1.53,
+   "end": 5.41
+  },
+  {
+   "type": "card",
+   "title": "الأمورتيسمون",
+   "sub": "درجة الإهلاك ديال الأصل",
+   "emoji": "🧮",
+   "start": 8.66,
+   "end": 12.78
+  },
+  {
+   "type": "card",
+   "title": "نتا كمقاول = أصل",
+   "sub": "ما عندناش طريقة نحسبو الإهلاك ديالو",
+   "emoji": "🧑‍💼",
+   "start": 21.32,
+   "end": 24.176
+  },
+  {
+   "type": "chips2",
+   "items": [
+    {
+     "text": "الشيفر دافير",
+     "emoji": "📈"
+    },
+    {
+     "text": "المشاكل",
+     "emoji": "⚠️"
+    }
+   ],
+   "start": 24.176,
+   "end": 27.1
+  },
+  {
+   "type": "tiles",
+   "items": [
+    {
+     "text": "النمو يكبر",
+     "emoji": "📈"
+    },
+    {
+     "text": "إهلاك المقاول ينقص",
+     "emoji": "📉"
+    }
+   ],
+   "active": 1,
+   "start": 40.973,
+   "end": 45.08
+  },
+  {
+   "type": "chip",
+   "text": "المرة 1: كتحلو",
+   "emoji": "1️⃣",
+   "start": 47.68,
+   "end": 49.84
+  },
+  {
+   "type": "chip",
+   "text": "المرة 2: كتأكد الحل",
+   "emoji": "2️⃣",
+   "start": 49.84,
+   "end": 53.62
+  },
+  {
+   "type": "card",
+   "title": "المرة 3: كتفوض",
+   "sub": "كتعلم شخص الطريقة باش يحل المشكل",
+   "emoji": "🤝",
+   "start": 53.62,
+   "end": 59.36
+  },
+  {
+   "type": "card",
+   "title": "مليون مشكل كل نهار؟",
+   "sub": "ولا نفس المشكل كيتعاود 30 سنة",
+   "emoji": "🔁",
+   "start": 63.46,
+   "end": 68.36
+  },
+  {
+   "type": "chips2",
+   "items": [
+    {
+     "text": "النمو يكبر",
+     "emoji": "📈"
+    },
+    {
+     "text": "الإهلاك يقلال",
+     "emoji": "📉"
+    }
+   ],
+   "start": 72.04,
+   "end": 77.027
+  },
+  {
+   "type": "chip",
+   "text": "مستر بورناوت",
+   "emoji": "🔥",
+   "start": 77.027,
+   "end": 79.227
+  }
+ ],
+ "sfx": [
+  {
+   "name": "swell",
+   "at": 0.0,
+   "volume": 0.13
+  },
+  {
+   "name": "pop",
+   "at": 1.53,
+   "volume": 0.26
+  },
+  {
+   "name": "whoosh",
+   "at": 3.333,
+   "volume": 0.32
+  },
+  {
+   "name": "air",
+   "at": 5.82,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 5.92,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 6.12,
+   "volume": 0.13
+  },
+  {
+   "name": "shimmer",
+   "at": 8.66,
+   "volume": 0.2
+  },
+  {
+   "name": "air",
+   "at": 10.1,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 10.2,
+   "volume": 0.32
+  },
+  {
+   "name": "shimmer",
+   "at": 10.55,
+   "volume": 0.2
+  },
+  {
+   "name": "swell",
+   "at": 12.78,
+   "volume": 0.13
+  },
+  {
+   "name": "air",
+   "at": 15.12,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 15.22,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 15.42,
+   "volume": 0.13
+  },
+  {
+   "name": "swipe",
+   "at": 17.14,
+   "volume": 0.16
+  },
+  {
+   "name": "air",
+   "at": 20.62,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 20.72,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 20.92,
+   "volume": 0.13
+  },
+  {
+   "name": "shimmer",
+   "at": 21.32,
+   "volume": 0.2
+  },
+  {
+   "name": "air",
+   "at": 22.08,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 23.976,
+   "volume": 0.32
+  },
+  {
+   "name": "pop",
+   "at": 24.176,
+   "volume": 0.24
+  },
+  {
+   "name": "whoosh",
+   "at": 27.7,
+   "volume": 0.32
+  },
+  {
+   "name": "shimmer",
+   "at": 28.05,
+   "volume": 0.2
+  },
+  {
+   "name": "whoosh",
+   "at": 31.74,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 31.94,
+   "volume": 0.13
+  },
+  {
+   "name": "shimmer",
+   "at": 32.09,
+   "volume": 0.2
+  },
+  {
+   "name": "swipe",
+   "at": 32.473,
+   "volume": 0.16
+  },
+  {
+   "name": "swipe",
+   "at": 34.707,
+   "volume": 0.16
+  },
+  {
+   "name": "air",
+   "at": 35.3,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 35.487,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 35.687,
+   "volume": 0.13
+  },
+  {
+   "name": "swipe",
+   "at": 36.44,
+   "volume": 0.16
+  },
+  {
+   "name": "swipe",
+   "at": 37.373,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 39.1,
+   "volume": 0.32
+  },
+  {
+   "name": "swipe",
+   "at": 40.14,
+   "volume": 0.16
+  },
+  {
+   "name": "pop",
+   "at": 40.973,
+   "volume": 0.28
+  },
+  {
+   "name": "swipe",
+   "at": 41.907,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 43.7,
+   "volume": 0.32
+  },
+  {
+   "name": "shimmer",
+   "at": 44.05,
+   "volume": 0.2
+  },
+  {
+   "name": "air",
+   "at": 44.78,
+   "volume": 0.16
+  },
+  {
+   "name": "swell",
+   "at": 45.08,
+   "volume": 0.13
+  },
+  {
+   "name": "swipe",
+   "at": 45.107,
+   "volume": 0.16
+  },
+  {
+   "name": "pop",
+   "at": 47.68,
+   "volume": 0.26
+  },
+  {
+   "name": "air",
+   "at": 49.22,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 49.32,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 49.52,
+   "volume": 0.13
+  },
+  {
+   "name": "pop",
+   "at": 49.84,
+   "volume": 0.26
+  },
+  {
+   "name": "air",
+   "at": 52.98,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 53.08,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 53.28,
+   "volume": 0.13
+  },
+  {
+   "name": "shimmer",
+   "at": 53.62,
+   "volume": 0.2
+  },
+  {
+   "name": "air",
+   "at": 59.06,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 59.16,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 59.36,
+   "volume": 0.13
+  },
+  {
+   "name": "air",
+   "at": 62.212,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 62.312,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 62.512,
+   "volume": 0.13
+  },
+  {
+   "name": "shimmer",
+   "at": 62.662,
+   "volume": 0.2
+  },
+  {
+   "name": "shimmer",
+   "at": 63.46,
+   "volume": 0.2
+  },
+  {
+   "name": "air",
+   "at": 65.14,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 65.24,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 65.44,
+   "volume": 0.13
+  },
+  {
+   "name": "air",
+   "at": 68.06,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 69.36,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 69.56,
+   "volume": 0.13
+  },
+  {
+   "name": "shimmer",
+   "at": 69.71,
+   "volume": 0.2
+  },
+  {
+   "name": "air",
+   "at": 71.74,
+   "volume": 0.16
+  },
+  {
+   "name": "swell",
+   "at": 72.04,
+   "volume": 0.13
+  },
+  {
+   "name": "pop",
+   "at": 72.04,
+   "volume": 0.24
+  },
+  {
+   "name": "swipe",
+   "at": 72.107,
+   "volume": 0.16
+  },
+  {
+   "name": "air",
+   "at": 74.45,
+   "volume": 0.16
+  },
+  {
+   "name": "whoosh",
+   "at": 74.55,
+   "volume": 0.32
+  },
+  {
+   "name": "swell",
+   "at": 74.75,
+   "volume": 0.13
+  },
+  {
+   "name": "swipe",
+   "at": 75.707,
+   "volume": 0.16
+  },
+  {
+   "name": "swipe",
+   "at": 76.573,
+   "volume": 0.16
+  },
+  {
+   "name": "pop",
+   "at": 77.027,
+   "volume": 0.26
+  },
+  {
+   "name": "swipe",
+   "at": 77.34,
+   "volume": 0.16
+  },
+  {
+   "name": "air",
+   "at": 77.74,
+   "volume": 0.16
+  }
+ ],
+ "music": {
+  "src": "sfx/music.wav",
+  "volume": 0.075
+ }
+}

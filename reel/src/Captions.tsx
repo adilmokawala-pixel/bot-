@@ -1,5 +1,5 @@
-import React from 'react';
-import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import React, {useEffect, useLayoutEffect, useRef, useState} from 'react';
+import {continueRender, delayRender, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {AR_FONT, BRAND, EN_FONT} from './brand';
 import {Glass} from './Glass';
 import type {CaptionGroup, Word} from './types';
@@ -45,6 +45,30 @@ export const Captions: React.FC<{groups: CaptionGroup[]; words: Word[]}> = ({gro
 	const {fps} = useVideoConfig();
 	const t = frame / fps;
 	const g = groups.find((c) => t >= c.start && t < c.end);
+	// the size estimate below runs short for wide Arabic letters (ف ك ش): measure the words and shrink to MAX_W if needed
+	const rowRef = useRef<HTMLDivElement>(null);
+	const [fit, setFit] = useState({key: -1, k: 1});
+	// the Arabic font arrives after the first layout: measure again once it has loaded
+	const [fontsReady, setFontsReady] = useState(false);
+	useEffect(() => {
+		const handle = delayRender('caption fonts');
+		// fonts load lazily (and per unicode subset), so ask for the Arabic glyphs explicitly
+		const load = (f: string) => document.fonts.load(`700 64px ${f}`, 'فالمقاولة').catch(() => []);
+		Promise.all([load("'Thmanyah Sans'"), load("'Cairo'")]).then(() => {
+			setFontsReady(true);
+			requestAnimationFrame(() => continueRender(handle));
+		});
+	}, []);
+	const k = g && fit.key === g.start ? fit.k : 1;
+	useLayoutEffect(() => {
+		const row = rowRef.current;
+		if (!g || !row) return;
+		const kids = Array.from(row.children) as HTMLElement[];
+		const gap = parseFloat(getComputedStyle(row).columnGap) || 0;
+		const w = kids.reduce((n, el) => n + el.offsetWidth, 0) + gap * Math.max(kids.length - 1, 0);
+		const want = Math.min(1, (MAX_W * k) / w);
+		if (fontsReady && (fit.key !== g.start || Math.abs(want - k) > 0.005)) setFit({key: g.start, k: want});
+	});
 	if (!g) return null;
 	const ws = g.words.map((i) => words[i]);
 	const gFrame = Math.round(g.start * fps);
@@ -53,7 +77,7 @@ export const Captions: React.FC<{groups: CaptionGroup[]; words: Word[]}> = ({gro
 
 	const chars = ws.reduce((n, w) => n + [...w.w].length, 0);
 	const gaps = Math.max(ws.length - 1, 0);
-	const fontSize = Math.min(92, MAX_W / (chars * 0.5 + gaps * 0.25));
+	const fontSize = Math.min(92, MAX_W / (chars * 0.5 + gaps * 0.25)) * k;
 
 	// active word = the last word whose start has passed
 	let active = -1;
@@ -65,7 +89,7 @@ export const Captions: React.FC<{groups: CaptionGroup[]; words: Word[]}> = ({gro
 		<div style={{position: 'absolute', top: TOP, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 			<div style={{transform: `scale(${scale})`, transformOrigin: '50% 0%'}}>
 				<Glass tone="dark" radius={40} sheenFrom={gFrame} style={{padding: '14px 34px 20px', maxWidth: MAX_W + 68}}>
-					<div style={{display: 'flex', flexDirection: 'row-reverse', gap: fontSize * 0.28, alignItems: 'baseline', justifyContent: 'center'}}>
+					<div ref={rowRef} style={{display: 'flex', flexDirection: 'row-reverse', gap: fontSize * 0.28, alignItems: 'baseline', justifyContent: 'center'}}>
 						{ws.map((w, i) => {
 							const isActive = i === active;
 							const spoken = i <= active;
@@ -80,6 +104,7 @@ export const Captions: React.FC<{groups: CaptionGroup[]; words: Word[]}> = ({gro
 										lineHeight: 1.35,
 										direction: 'rtl',
 										whiteSpace: 'nowrap',
+										flexShrink: 0,
 										color: isActive ? BRAND.gold : BRAND.white,
 										textShadow: isActive ? goldCrystal : whiteCrystal,
 										opacity: spoken ? 1 : 0.55,

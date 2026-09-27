@@ -1,0 +1,229 @@
+{
+ "en": {
+  "0": "WHEN YOUR BUSINESS BUYS A «MACHINE» THAT PRODUCES",
+  "1": "THE ACCOUNTANT'S FIRST LESSON: ITS «DEPRECIATION»",
+  "2": "THE «DEPRECIATION» RATE",
+  "3": "HOW THE ASSET LOSES «VALUE» OVER TIME",
+  "4": "BUT ONE ASSET HAS NO «FORMULA» FOR ITS DEPRECIATION",
+  "5": "AND THAT'S «YOU», THE ENTREPRENEUR",
+  "6": "WHEN THE BUSINESS IS «GROWING»",
+  "7": "YOUR «REVENUE» GROWS",
+  "8": "GROWTH AND «PROBLEMS» GROW WITH YOU",
+  "9": "IT KEEPS «PILING UP»",
+  "10": "IT KEEPS «PILING UP»",
+  "11": "IT KEEPS «PILING UP»",
+  "12": "IT KEEPS «PILING UP»",
+  "13": "IT KEEPS «PILING UP»",
+  "14": "IT KEEPS «PILING UP»",
+  "15": "THAT CREATES «UNHEALTHY» GROWTH",
+  "16": "WE WANT GROWTH WHILE THE FOUNDER'S «WEAR» GOES DOWN",
+  "17": "«DELEGATE» THE PROCESS: 1ST TIME, YOU SOLVE IT",
+  "18": "2ND TIME, YOU «CONFIRM» THE SOLUTION",
+  "19": "3RD TIME, YOU «TRAIN» SOMEONE TO SOLVE IT",
+  "20": "NOT YOU SOLVING THE «SAME PROBLEM» FOR 30 YEARS",
+  "21": "YOU THINK YOU SOLVE A «MILLION» PROBLEMS A DAY",
+  "22": "IT'S ONE PROBLEM «REPEATING» FOR 30 YEARS",
+  "23": "THAT'S THE «REAL ISSUE»",
+  "24": "FOR «HEALTHY» GROWTH",
+  "25": "GROWTH GOES UP, YOUR «WEAR» GOES DOWN",
+  "26": "SO WE DON'T MEET MISTER «BURNOUT»"
+ },
+ "scenes": {
+  "1": {
+   "keyword": "MACHINE"
+  },
+  "2": {
+   "icons": [
+    "🧮",
+    "📄",
+    "⚙️",
+    "📉",
+    "🏭"
+   ]
+  },
+  "3": {
+   "bg": "image",
+   "image": "adil/img/depreciation.jpg",
+   "label": "📉 الإهلاك"
+  },
+  "5": {
+   "keyword": "YOU"
+  },
+  "6": {
+   "icons": [
+    "📈",
+    "💼",
+    "⚠️",
+    "💰",
+    "👥"
+   ]
+  },
+  "7": {
+   "path": [
+    "الشيفر",
+    "النمو",
+    "المشاكل"
+   ]
+  },
+  "8": {
+   "bg": "image",
+   "image": "adil/img/unhealthy.jpg",
+   "label": "نمو ماشي صحي"
+  },
+  "9": {
+   "keyword": "GROWTH"
+  },
+  "10": {
+   "icons": [
+    "📈",
+    "📉",
+    "⚖️",
+    "🧑‍💼",
+    "🔋"
+   ]
+  },
+  "11": {
+   "path": [
+    "كتحل",
+    "كتأكد",
+    "كتفوض"
+   ]
+  },
+  "13": {
+   "keyword": "DELEGATE"
+  },
+  "14": {
+   "icons": [
+    "🔁",
+    "⏳",
+    "🧩",
+    "📅",
+    "⚙️"
+   ]
+  },
+  "15": {
+   "path": [
+    "مليون مشكل؟",
+    "نفس المشكل",
+    "30 سنة"
+   ]
+  },
+  "17": {
+   "bg": "image",
+   "image": "adil/img/healthy.jpg",
+   "label": "نمو صحي ✅"
+  },
+  "18": {
+   "bg": "orange",
+   "keyword": "BURNOUT"
+  }
+ },
+ "annotations": [
+  {
+   "type": "chip",
+   "atWord": 4,
+   "untilWord": 12,
+   "text": "ماشينة / ماطيريال",
+   "emoji": "⚙️"
+  },
+  {
+   "type": "card",
+   "atWord": 17,
+   "untilWord": 27,
+   "title": "الأمورتيسمون",
+   "sub": "درجة الإهلاك ديال الأصل",
+   "emoji": "🧮"
+  },
+  {
+   "type": "card",
+   "atWord": 49,
+   "untilWord": 55,
+   "title": "نتا كمقاول = أصل",
+   "sub": "ما عندناش طريقة نحسبو الإهلاك ديالو",
+   "emoji": "🧑‍💼"
+  },
+  {
+   "type": "chips2",
+   "atWord": 55,
+   "untilWord": 63,
+   "items": [
+    {
+     "text": "الشيفر دافير",
+     "emoji": "📈"
+    },
+    {
+     "text": "المشاكل",
+     "emoji": "⚠️"
+    }
+   ]
+  },
+  {
+   "type": "tiles",
+   "atWord": 92,
+   "untilWord": 98,
+   "items": [
+    {
+     "text": "النمو يكبر",
+     "emoji": "📈"
+    },
+    {
+     "text": "إهلاك المقاول ينقص",
+     "emoji": "📉"
+    }
+   ],
+   "active": 1
+  },
+  {
+   "type": "chip",
+   "atWord": 102,
+   "untilWord": 105,
+   "text": "المرة 1: كتحلو",
+   "emoji": "1️⃣"
+  },
+  {
+   "type": "chip",
+   "atWord": 105,
+   "untilWord": 111,
+   "text": "المرة 2: كتأكد الحل",
+   "emoji": "2️⃣"
+  },
+  {
+   "type": "card",
+   "atWord": 111,
+   "untilWord": 125,
+   "title": "المرة 3: كتفوض",
+   "sub": "كتعلم شخص الطريقة باش يحل المشكل",
+   "emoji": "🤝"
+  },
+  {
+   "type": "card",
+   "atWord": 135,
+   "untilWord": 148,
+   "title": "مليون مشكل كل نهار؟",
+   "sub": "ولا نفس المشكل كيتعاود 30 سنة",
+   "emoji": "🔁"
+  },
+  {
+   "type": "chips2",
+   "atWord": 158,
+   "untilWord": 167,
+   "items": [
+    {
+     "text": "النمو يكبر",
+     "emoji": "📈"
+    },
+    {
+     "text": "الإهلاك يقلال",
+     "emoji": "📉"
+    }
+   ]
+  },
+  {
+   "type": "chip",
+   "atWord": 167,
+   "dur": 2.2,
+   "text": "مستر بورناوت",
+   "emoji": "🔥"
+  }
+ ]
+}

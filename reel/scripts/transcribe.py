@@ -1,6 +1,6 @@
 """Step 3: word-level transcription (faster-whisper large-v3-turbo) + Darija fixes.
 
-Usage: python3 scripts/transcribe.py <id> [--text correct_darija.txt]
+Usage: python3 scripts/transcribe.py <id> [--text correct_darija.txt] [--prompt "Darija context sentence"]
 
 Reads public/<id>/raw_cut.wav (already cut, so times match the reel timeline).
 Writes public/<id>/words.json and prints:
@@ -36,7 +36,7 @@ def load_corrections():
     return json.loads(p.read_text()) if p.exists() else {}
 
 
-def whisper_words(wav):
+def whisper_words(wav, prompt=INITIAL_PROMPT):
     from faster_whisper import WhisperModel
 
     try:
@@ -46,8 +46,8 @@ def whisper_words(wav):
             f"! cannot load Whisper model '{MODEL}': {e}\n"
             "  Allow huggingface.co + cdn-lfs.huggingface.co + cas-bridge.xethub.hf.co in the environment's "
             "network settings, or set WHISPER_MODEL to a local CTranslate2 model folder.")
-    segs, _ = model.transcribe(str(wav), language="ar", word_timestamps=True, initial_prompt=INITIAL_PROMPT,
-                               vad_filter=False, beam_size=5)
+    segs, _ = model.transcribe(str(wav), language="ar", word_timestamps=True, initial_prompt=prompt,
+                               condition_on_previous_text=False, vad_filter=False, beam_size=5)
     out = []
     for s in segs:
         for w in s.words:
@@ -84,9 +84,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("id")
     ap.add_argument("--text", help="file with the exact Darija wording")
+    ap.add_argument("--prompt", default=INITIAL_PROMPT,
+                    help="Whisper initial prompt; a Darija sentence with the video's own terms keeps it from drifting to MSA")
     a = ap.parse_args()
     d = ROOT / "public" / a.id
-    words = whisper_words(d / "raw_cut.wav")
+    words = whisper_words(d / "raw_cut.wav", a.prompt)
     fixes = []
     if a.text:
         words = align_text(words, Path(a.text).read_text())
