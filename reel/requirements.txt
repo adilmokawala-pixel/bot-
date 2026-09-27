@@ -1,0 +1,7 @@
+faster-whisper
+mediapipe
+opencv-contrib-python-headless
+numpy
+scipy
+soundfile
+pyloudnorm

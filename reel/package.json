@@ -1,0 +1,24 @@
+{
+  "name": "mokawala-reel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mokawala.ma vertical Reel template (Remotion)",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render Reel",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/cairo": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@remotion/cli": "4.0.529",
+    "@remotion/media-utils": "4.0.529",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

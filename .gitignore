@@ -1,0 +1,12 @@
+videos/
+reel/node_modules/
+reel/models/
+reel/out/
+reel/public/sfx/*.wav
+# per-video media (keep the hand-written edit/words files)
+reel/public/*/*.mp4
+reel/public/*/*.webm
+reel/public/*/*.wav
+reel/public/fonts/*
+!reel/public/fonts/README.md
+reel/public/demo/
