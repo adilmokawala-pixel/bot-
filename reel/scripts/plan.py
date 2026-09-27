@@ -9,8 +9,12 @@ edit.json lets a human/Claude add the editorial layer without touching code:
   "scenes":      {"<scene index>": {"keyword": "MRE", "icons": ["💰"], "path": ["الفكرة","الملف"]}},
   "pushes":      [<sentence index>, ...]           # force a persuasion push
   "noPush":      [<sentence index>, ...],
-  "annotations": [{"type": "chip", "atWord": 12, "dur": 1.6, "text": "التمويل", "emoji": "💰"}, ...]
+  "annotations": [{"type": "chip", "atWord": 12, "dur": 1.6, "text": "التمويل", "emoji": "💰"}, ...],
+  "broll":       [{"atWord": 98, "untilWord": 124, "bg": "steps",
+                   "steps": [{"atWord": 99, "emoji": "1️⃣", "title": "...", "sub": "..."}]}, ...]
 }
+"broll" = full-screen graphic without the person (voice and captions go on). It replaces the auto scenes
+it overlaps. Any scene (auto or broll) can also take "noPerson": true, e.g. an "image" scene showing a chart.
 annotation times: "atWord" (word index) or "at" (seconds); "untilWord" or "dur" for the end.
 """
 import json
@@ -75,6 +79,35 @@ def main(vid):
         sc.update(edit.get("scenes", {}).get(str(i), {}))  # may override bg, e.g. {"bg": "image", "image": "adil/img/bank.jpg"}
         scenes.append(sc)
 
+    # b-roll: full-screen scenes without the person, carved into the auto scenes
+    def word_time(a, key_word, key_sec, end=False):
+        if key_word in a:
+            return words[a[key_word]]["end" if end else "start"]
+        return a.get(key_sec)
+
+    for b in edit.get("broll", []):
+        b = dict(b)
+        st, en = word_time(b, "atWord", "at"), word_time(b, "untilWord", "until", end=True)
+        for k in ("atWord", "at", "untilWord", "until"):
+            b.pop(k, None)
+        b["steps"] = [{**{k: v for k, v in s.items() if k != "atWord"}, "at": word_time(s, "atWord", "at")} for s in b.get("steps", [])]
+        kept = []
+        for sc in scenes:
+            if sc["end"] <= st or sc["start"] >= en:
+                kept.append(sc)
+                continue
+            if st - sc["start"] >= 1.5:
+                kept.append({**sc, "end": round(st, 3)})
+            if sc["end"] - en >= 1.5:
+                kept.append({**sc, "start": round(en, 3)})
+        kept.append({"start": round(st, 3), "end": round(en, 3), "bg": "image", **b, "noPerson": True})
+        kept.sort(key=lambda x: x["start"])
+        # close the gaps left by dropped slivers
+        for i in range(len(kept) - 1):
+            kept[i]["end"] = kept[i + 1]["start"]
+        kept[0]["start"], kept[-1]["end"] = 0.0, round(dur, 3)
+        scenes = kept
+
     # persuasion pushes: long sentences (>=5 words, >=2s) or spanning several segments
     pushes = []
     forced = set(edit.get("pushes", []))
@@ -121,7 +154,7 @@ def main(vid):
     scene_cut = {sc["start"] for sc in scenes[1:]}
     for sc in scenes[1:]:
         sfx.append({"name": "whoosh", "at": round(sc["start"] - 0.2, 3), "volume": 0.32})
-        if sc["bg"] in ("light", "image"):
+        if sc["bg"] in ("light", "image", "steps"):
             sfx.append({"name": "shimmer", "at": round(sc["start"] + 0.15, 3), "volume": 0.20})
     for s in segments[1:]:
         if all(abs(s["start"] - c) > 0.3 for c in scene_cut):

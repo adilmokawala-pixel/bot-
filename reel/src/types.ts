@@ -1,4 +1,6 @@
-export type Bg = 'original' | 'orange' | 'dark' | 'light' | 'image';
+export type Bg = 'original' | 'orange' | 'dark' | 'light' | 'image' | 'steps';
+
+export type Step = {at: number; emoji: string; title: string; sub?: string};
 
 export type Word = {w: string; start: number; end: number};
 
@@ -25,6 +27,10 @@ export type Scene = {
 	image?: string;
 	/** image scene: short glass label on the picture */
 	label?: string;
+	/** b-roll: full-screen graphic, the person is hidden (voice and captions go on) */
+	noPerson?: boolean;
+	/** steps scene: numbered cards, each popping in at `at` (seconds) */
+	steps?: Step[];
 };
 
 export type Push = {start: number; end: number};

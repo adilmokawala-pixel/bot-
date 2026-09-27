@@ -54,6 +54,14 @@ const SceneLayer: React.FC<{tl: Timeline; scene: Scene; startFrame: number; zoom
 			</AbsoluteFill>
 		);
 	}
+	if (scene.noPerson) {
+		return (
+			<AbsoluteFill>
+				<Background scene={scene} startFrame={startFrame} />
+				<Foreground scene={scene} startFrame={startFrame} />
+			</AbsoluteFill>
+		);
+	}
 	return (
 		<AbsoluteFill>
 			<Background scene={scene} startFrame={startFrame} />

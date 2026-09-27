@@ -151,6 +151,71 @@ const LightLabels: React.FC<{scene: Scene; local: number}> = ({scene, local}) =>
 	);
 };
 
+/** B-roll: numbered steps, full screen. The current step is gold, earlier ones dim. */
+const StepsBg: React.FC<{scene: Scene; local: number; startFrame: number}> = ({scene, local, startFrame}) => {
+	const {fps} = useVideoConfig();
+	const steps = scene.steps ?? [];
+	const frame = startFrame + local;
+	const current = steps.reduce((c, st, i) => (frame >= Math.round(st.at * fps) ? i : c), -1);
+	return (
+		<AbsoluteFill style={{background: BRAND.dark}}>
+			<AbsoluteFill
+				style={{
+					backgroundImage:
+						'linear-gradient(rgba(255,255,255,0.05) 2px, transparent 2px), linear-gradient(90deg, rgba(255,255,255,0.05) 2px, transparent 2px)',
+					backgroundSize: '90px 90px',
+					backgroundPosition: `0 ${local * 0.6}px`,
+				}}
+			/>
+			<AbsoluteFill style={{background: 'radial-gradient(circle at 50% 45%, rgba(242,90,36,0.45) 0%, rgba(242,90,36,0.12) 35%, rgba(14,13,12,0) 65%)'}} />
+			<div style={{position: 'absolute', top: 430, left: 70, right: 130, display: 'flex', flexDirection: 'column', gap: 34}}>
+				{steps.map((st, i) => {
+					const s = spring({frame: frame - Math.round(st.at * fps), fps, config: {damping: 13, stiffness: 190}});
+					const on = i === current;
+					return (
+						<div key={i} style={{transform: `translateX(${(1 - s) * 120}px) scale(${0.8 + 0.2 * s})`, opacity: s * (on ? 1 : 0.5), transformOrigin: '100% 50%'}}>
+							<Glass
+								tone="dark"
+								radius={36}
+								sheenFrom={Math.round(st.at * fps) + 3}
+								style={{
+									padding: '22px 28px',
+									display: 'flex',
+									alignItems: 'center',
+									gap: 24,
+									flexDirection: 'row-reverse',
+									border: on ? `4px solid ${BRAND.gold}` : '2px solid rgba(255,255,255,0.4)',
+									boxShadow: on ? '0 0 34px rgba(255,212,71,0.4), inset 0 2px 0 rgba(255,255,255,0.5)' : undefined,
+								}}
+							>
+								<div
+									style={{
+										width: 130,
+										height: 130,
+										borderRadius: 30,
+										flexShrink: 0,
+										background: `linear-gradient(160deg, ${BRAND.orangeLight}, ${BRAND.orangeDark})`,
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+										fontSize: 74,
+									}}
+								>
+									{st.emoji}
+								</div>
+								<div style={{flex: 1, textAlign: 'right', direction: 'rtl'}}>
+									<div style={{fontFamily: AR_FONT, fontWeight: 700, fontSize: 56, lineHeight: 1.3, color: on ? BRAND.gold : BRAND.white}}>{st.title}</div>
+									{st.sub ? <div style={{fontFamily: AR_FONT, fontWeight: 700, fontSize: 36, lineHeight: 1.35, color: 'rgba(255,255,255,0.85)'}}>{st.sub}</div> : null}
+								</div>
+							</Glass>
+						</div>
+					);
+				})}
+			</div>
+		</AbsoluteFill>
+	);
+};
+
 /** Scene elements drawn above the person layer. */
 export const Foreground: React.FC<{scene: Scene; startFrame: number}> = ({scene, startFrame}) => {
 	const frame = useCurrentFrame();
@@ -192,5 +257,6 @@ export const Background: React.FC<{scene: Scene; startFrame: number}> = ({scene,
 	if (scene.bg === 'dark') return <DarkBg scene={scene} local={local} />;
 	if (scene.bg === 'light') return <LightBg scene={scene} local={local} />;
 	if (scene.bg === 'image') return <ImageBg scene={scene} local={local} />;
+	if (scene.bg === 'steps') return <StepsBg scene={scene} local={local} startFrame={startFrame} />;
 	return null;
 };

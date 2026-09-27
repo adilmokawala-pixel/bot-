@@ -1588,7 +1588,8 @@
    "end": 15.42,
    "bg": "image",
    "image": "adil/img/depreciation.jpg",
-   "label": "📉 الإهلاك"
+   "label": "📉 الإهلاك",
+   "noPerson": true
   },
   {
    "start": 15.42,
@@ -1628,7 +1629,8 @@
    "end": 35.687,
    "bg": "image",
    "image": "adil/img/unhealthy.jpg",
-   "label": "نمو ماشي صحي"
+   "label": "نمو ماشي صحي",
+   "noPerson": true
   },
   {
    "start": 35.687,
@@ -1638,7 +1640,7 @@
   },
   {
    "start": 39.3,
-   "end": 43.9,
+   "end": 45.08,
    "bg": "dark",
    "icons": [
     "📈",
@@ -1649,25 +1651,30 @@
    ]
   },
   {
-   "start": 43.9,
-   "end": 49.52,
-   "bg": "light",
-   "path": [
-    "كتحل",
-    "كتأكد",
-    "كتفوض"
-   ]
-  },
-  {
-   "start": 49.52,
-   "end": 53.28,
-   "bg": "original"
-  },
-  {
-   "start": 53.28,
+   "start": 45.08,
    "end": 59.36,
-   "bg": "orange",
-   "keyword": "DELEGATE"
+   "bg": "steps",
+   "steps": [
+    {
+     "emoji": "1️⃣",
+     "title": "المرة الأولى",
+     "sub": "كتحل المشكل",
+     "at": 46.38
+    },
+    {
+     "emoji": "2️⃣",
+     "title": "المرة الثانية",
+     "sub": "كتأكد الطريقة ديال الحل",
+     "at": 49.84
+    },
+    {
+     "emoji": "3️⃣",
+     "title": "المرة الثالثة",
+     "sub": "كتعلم شخص وتفوض ليه الطريقة",
+     "at": 53.62
+    }
+   ],
+   "noPerson": true
   },
   {
    "start": 59.36,
@@ -1701,7 +1708,8 @@
    "end": 74.75,
    "bg": "image",
    "image": "adil/img/healthy.jpg",
-   "label": "نمو صحي ✅"
+   "label": "نمو صحي ✅",
+   "noPerson": true
   },
   {
    "start": 74.75,
@@ -1832,28 +1840,6 @@
    "end": 45.08
   },
   {
-   "type": "chip",
-   "text": "المرة 1: كتحلو",
-   "emoji": "1️⃣",
-   "start": 47.68,
-   "end": 49.84
-  },
-  {
-   "type": "chip",
-   "text": "المرة 2: كتأكد الحل",
-   "emoji": "2️⃣",
-   "start": 49.84,
-   "end": 53.62
-  },
-  {
-   "type": "card",
-   "title": "المرة 3: كتفوض",
-   "sub": "كتعلم شخص الطريقة باش يحل المشكل",
-   "emoji": "🤝",
-   "start": 53.62,
-   "end": 59.36
-  },
-  {
    "type": "card",
    "title": "مليون مشكل كل نهار؟",
    "sub": "ولا نفس المشكل كيتعاود 30 سنة",
@@ -1866,11 +1852,11 @@
    "items": [
     {
      "text": "النمو يكبر",
-     "emoji": "📈"
+     "emoji": "🟢"
     },
     {
      "text": "الإهلاك يقلال",
-     "emoji": "📉"
+     "emoji": "🟠"
     }
    ],
    "start": 72.04,
@@ -1882,6 +1868,28 @@
    "emoji": "🔥",
    "start": 77.027,
    "end": 79.227
+  },
+  {
+   "type": "chips2",
+   "items": [
+    {
+     "text": "النمو",
+     "emoji": "🟢"
+    },
+    {
+     "text": "المشاكل",
+     "emoji": "🔴"
+    }
+   ],
+   "start": 31.94,
+   "end": 35.687
+  },
+  {
+   "type": "chip",
+   "text": "تفوض البروسيس",
+   "emoji": "🤝",
+   "start": 45.08,
+   "end": 59.36
   }
  ],
  "sfx": [
@@ -2016,6 +2024,11 @@
    "volume": 0.13
   },
   {
+   "name": "pop",
+   "at": 31.94,
+   "volume": 0.24
+  },
+  {
    "name": "shimmer",
    "at": 32.09,
    "volume": 0.2
@@ -2076,14 +2089,9 @@
    "volume": 0.16
   },
   {
-   "name": "whoosh",
-   "at": 43.7,
-   "volume": 0.32
-  },
-  {
-   "name": "shimmer",
-   "at": 44.05,
-   "volume": 0.2
+   "name": "swipe",
+   "at": 43.84,
+   "volume": 0.16
   },
   {
    "name": "air",
@@ -2091,19 +2099,24 @@
    "volume": 0.16
   },
   {
+   "name": "whoosh",
+   "at": 44.88,
+   "volume": 0.32
+  },
+  {
    "name": "swell",
    "at": 45.08,
    "volume": 0.13
   },
   {
-   "name": "swipe",
-   "at": 45.107,
-   "volume": 0.16
+   "name": "pop",
+   "at": 45.08,
+   "volume": 0.26
   },
   {
-   "name": "pop",
-   "at": 47.68,
-   "volume": 0.26
+   "name": "shimmer",
+   "at": 45.23,
+   "volume": 0.2
   },
   {
    "name": "air",
@@ -2111,19 +2124,9 @@
    "volume": 0.16
   },
   {
-   "name": "whoosh",
-   "at": 49.32,
-   "volume": 0.32
-  },
-  {
    "name": "swell",
    "at": 49.52,
    "volume": 0.13
-  },
-  {
-   "name": "pop",
-   "at": 49.84,
-   "volume": 0.26
   },
   {
    "name": "air",
@@ -2131,19 +2134,9 @@
    "volume": 0.16
   },
   {
-   "name": "whoosh",
-   "at": 53.08,
-   "volume": 0.32
-  },
-  {
    "name": "swell",
    "at": 53.28,
    "volume": 0.13
-  },
-  {
-   "name": "shimmer",
-   "at": 53.62,
-   "volume": 0.2
   },
   {
    "name": "air",
