@@ -35,9 +35,12 @@ export const fontFaceCss = `
   font-weight: 700 900;
 }`;
 
+/** Instagram Reels safe zones (1080x1920). */
 export const SAFE = {
-	platformUi: [0, 200],
+	platformTop: [0, 200],
 	annotations: [200, 420],
-	face: [420, 1500],
-	captions: [1560, 1800],
+	face: [420, 1200],
+	captions: [1250, 1480],
+	platformBottom: [1500, 1920], // username, caption, audio: no text here
+	platformRight: {x: 960, y: [1000, 1800]}, // like / comment / share buttons
 };

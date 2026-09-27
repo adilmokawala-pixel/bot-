@@ -20,6 +20,16 @@ BROWSERS = [
 ]
 
 
+# Instagram UI zones on a 360x640 thumbnail (1/3 scale): top bar, bottom username/caption, right buttons,
+# plus the mouth line (y=1200) in yellow.
+IG_OVERLAY = ",".join([
+    "drawbox=x=0:y=0:w=360:h=67:color=red@0.25:t=fill",
+    "drawbox=x=0:y=500:w=360:h=140:color=red@0.25:t=fill",
+    "drawbox=x=320:y=333:w=40:h=267:color=red@0.25:t=fill",
+    "drawbox=x=0:y=400:w=360:h=2:color=yellow@0.8:t=fill",
+])
+
+
 def run(cmd, **kw):
     print("$", " ".join(map(str, cmd))[:200])
     return subprocess.run(cmd, check=True, text=True, capture_output=True, **kw)
@@ -87,7 +97,7 @@ def main():
     tmp.mkdir()
     for i, t in enumerate(times):
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(t), "-i", str(final), "-frames:v", "1",
-                        "-vf", f"scale=360:640,drawtext=text='{t:.1f}s':x=10:y=10:fontsize=28:fontcolor=white:box=1:boxcolor=black@0.5",
+                        "-vf", "scale=360:640," + IG_OVERLAY,
                         str(tmp / f"{i:02d}.jpg")], check=True)
     cols = min(5, len(times))
     rows = -(-len(times) // cols)

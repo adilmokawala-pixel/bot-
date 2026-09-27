@@ -4,7 +4,9 @@ import {AR_FONT, BRAND, EN_FONT} from './brand';
 import {Glass} from './Glass';
 import type {CaptionGroup, Word} from './types';
 
-const TOP = 1560;
+/** Instagram-safe: below the mouth (<= ~1200) and above the username/caption UI (>= ~1500). */
+const TOP = 1250;
+const MAX_W = 800;
 
 const whiteCrystal = [
 	`0 2px 0 ${BRAND.bevel}`,
@@ -51,7 +53,7 @@ export const Captions: React.FC<{groups: CaptionGroup[]; words: Word[]}> = ({gro
 
 	const chars = ws.reduce((n, w) => n + [...w.w].length, 0);
 	const gaps = Math.max(ws.length - 1, 0);
-	const fontSize = Math.min(104, 880 / (chars * 0.5 + gaps * 0.25));
+	const fontSize = Math.min(92, MAX_W / (chars * 0.5 + gaps * 0.25));
 
 	// active word = the last word whose start has passed
 	let active = -1;
@@ -62,7 +64,7 @@ export const Captions: React.FC<{groups: CaptionGroup[]; words: Word[]}> = ({gro
 	return (
 		<div style={{position: 'absolute', top: TOP, left: 0, right: 0, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 			<div style={{transform: `scale(${scale})`, transformOrigin: '50% 0%'}}>
-				<Glass tone="dark" radius={40} sheenFrom={gFrame} style={{padding: '18px 38px 26px', maxWidth: 1000}}>
+				<Glass tone="dark" radius={40} sheenFrom={gFrame} style={{padding: '14px 34px 20px', maxWidth: MAX_W + 68}}>
 					<div style={{display: 'flex', flexDirection: 'row-reverse', gap: fontSize * 0.28, alignItems: 'baseline', justifyContent: 'center'}}>
 						{ws.map((w, i) => {
 							const isActive = i === active;
@@ -94,8 +96,8 @@ export const Captions: React.FC<{groups: CaptionGroup[]; words: Word[]}> = ({gro
 			</div>
 			{g.en ? (
 				<div style={{marginTop: 14, transform: `scale(${scale})`, transformOrigin: '50% 0%'}}>
-					<Glass tone="dark" radius={24} style={{padding: '10px 24px', maxWidth: 1000}}>
-						<div style={{fontFamily: EN_FONT, fontWeight: 800, fontSize: 38, color: BRAND.white, textAlign: 'center', letterSpacing: 0.5, lineHeight: 1.2}}>
+					<Glass tone="dark" radius={24} style={{padding: '8px 22px', maxWidth: MAX_W + 44}}>
+						<div style={{fontFamily: EN_FONT, fontWeight: 800, fontSize: 34, color: BRAND.white, textAlign: 'center', letterSpacing: 0.5, lineHeight: 1.2}}>
 							<EnLine text={g.en} />
 						</div>
 					</Glass>

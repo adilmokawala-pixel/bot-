@@ -91,23 +91,26 @@ const DarkBg: React.FC<{scene: Scene; local: number}> = ({scene, local}) => {
 	);
 };
 
+/** Path nodes: alternate sides, clear of the annotation band and of Instagram's right-hand buttons (x>=960, y>=1000). */
+const PATH_NODES = [
+	{x: 170, y: 560},
+	{x: 900, y: 720},
+	{x: 170, y: 870},
+	{x: 900, y: 975},
+];
+const pathLabels = (scene: Scene) => (scene.path?.length ? scene.path : ['الفكرة', 'الملف', 'التمويل', 'المشروع']);
+const drawFrames = (fps: number) => Math.round(fps * 2.2);
+
 const LightBg: React.FC<{scene: Scene; local: number}> = ({scene, local}) => {
 	const {fps} = useVideoConfig();
-	const labels = scene.path?.length ? scene.path : ['الفكرة', 'الملف', 'التمويل', 'المشروع'];
-	const nodes = [
-		{x: 190, y: 520},
-		{x: 890, y: 760},
-		{x: 170, y: 1040},
-		{x: 900, y: 1320},
-	].slice(0, labels.length);
+	const nodes = PATH_NODES.slice(0, pathLabels(scene).length);
 	const d = nodes.reduce((acc, n, i) => {
 		if (i === 0) return `M ${n.x} ${n.y}`;
 		const p = nodes[i - 1];
 		const my = (p.y + n.y) / 2;
 		return `${acc} C ${p.x} ${my}, ${n.x} ${my}, ${n.x} ${n.y}`;
 	}, '');
-	const drawDur = Math.round(fps * 2.2);
-	const progress = interpolate(local, [4, drawDur], [0, 1], {
+	const progress = interpolate(local, [4, drawFrames(fps)], [0, 1], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 		easing: Easing.inOut(Easing.cubic),
@@ -121,21 +124,38 @@ const LightBg: React.FC<{scene: Scene; local: number}> = ({scene, local}) => {
 			<svg width={W} height={H} style={{position: 'absolute', inset: 0}}>
 				<path d={d} fill="none" stroke={BRAND.orange} strokeWidth={10} strokeLinecap="round" strokeDasharray={LEN} strokeDashoffset={LEN * (1 - progress)} pathLength={LEN} />
 			</svg>
+		</AbsoluteFill>
+	);
+};
+
+/** Path labels sit in front of the person so the head never hides them. */
+const LightLabels: React.FC<{scene: Scene; local: number}> = ({scene, local}) => {
+	const {fps} = useVideoConfig();
+	const labels = pathLabels(scene);
+	const nodes = PATH_NODES.slice(0, labels.length);
+	const dd = drawFrames(fps);
+	return (
+		<AbsoluteFill>
 			{nodes.map((n, i) => {
-				const at = 4 + (drawDur - 4) * (i / Math.max(nodes.length - 1, 1));
+				const at = 4 + (dd - 4) * (i / Math.max(nodes.length - 1, 1));
 				const s = spring({frame: local - at, fps, config: {damping: 13, stiffness: 180}});
 				return (
 					<div key={i} style={{position: 'absolute', left: n.x, top: n.y, transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * s})`, opacity: s}}>
-						<Glass tone="light" radius={28} style={{padding: '14px 26px', background: 'rgba(255,255,255,0.55)', border: `3px solid ${BRAND.orange}`}}>
-							<span style={{fontFamily: AR_FONT, fontWeight: 700, fontSize: 44, color: BRAND.dark, direction: 'rtl', whiteSpace: 'nowrap'}}>
-								{labels[i]}
-							</span>
+						<Glass tone="light" radius={28} style={{padding: '12px 24px', background: 'rgba(255,255,255,0.72)', border: `3px solid ${BRAND.orange}`}}>
+							<span style={{fontFamily: AR_FONT, fontWeight: 700, fontSize: 42, color: BRAND.dark, direction: 'rtl', whiteSpace: 'nowrap'}}>{labels[i]}</span>
 						</Glass>
 					</div>
 				);
 			})}
 		</AbsoluteFill>
 	);
+};
+
+/** Scene elements drawn above the person layer. */
+export const Foreground: React.FC<{scene: Scene; startFrame: number}> = ({scene, startFrame}) => {
+	const frame = useCurrentFrame();
+	if (scene.bg === 'light') return <LightLabels scene={scene} local={frame - startFrame} />;
+	return null;
 };
 
 /** Illustration picture behind the person: slow Ken Burns + brand-tinted vignette. */

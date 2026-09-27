@@ -1,7 +1,8 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Easing, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Annotations} from './Annotations';
-import {Background} from './Backgrounds';
+import {OnLightBg} from './Glass';
+import {Background, Foreground} from './Backgrounds';
 import {fontFaceCss} from './brand';
 import {Captions} from './Captions';
 import type {Scene, Timeline} from './types';
@@ -11,7 +12,9 @@ const SEGMENT_PUSH = 0.035;
 const PERSUADE_ZOOM = 1.22;
 const PULL_BACK = 0.4;
 const TRANSITION = 7;
-const ORIGIN = '50% 38%';
+// zoom around the mouth line, so punch-ins and pushes never push the mouth down into the captions
+const ORIGIN = '50% 52%';
+const ORIGIN_Y = 0.52 * 1920;
 
 const easeInOut = Easing.inOut(Easing.cubic);
 const easeOut = Easing.out(Easing.cubic);
@@ -41,7 +44,7 @@ const SceneLayer: React.FC<{tl: Timeline; scene: Scene; startFrame: number; zoom
 	const base = changed ? 0.9 : 1.08;
 	const scale = base * zoom;
 	// original scene: never shift further than the zoom allows, so no black strip shows at the top
-	const ty = changed ? 170 : Math.min(70, Math.max(0, (scale - 1) * 0.38 * 1920));
+	const ty = changed ? 110 : Math.min(70, Math.max(0, (scale - 1) * ORIGIN_Y));
 	const transform = `translateY(${ty}px) scale(${scale})`;
 	const fill: React.CSSProperties = {width: '100%', height: '100%', objectFit: 'cover'};
 	if (!changed) {
@@ -57,6 +60,7 @@ const SceneLayer: React.FC<{tl: Timeline; scene: Scene; startFrame: number; zoom
 			<AbsoluteFill style={{transform, transformOrigin: ORIGIN, filter: 'drop-shadow(0 30px 50px rgba(0,0,0,.35))'}}>
 				<OffthreadVideo src={staticFile(tl.video.alpha)} transparent muted style={fill} />
 			</AbsoluteFill>
+			<Foreground scene={scene} startFrame={startFrame} />
 		</AbsoluteFill>
 	);
 };
@@ -95,7 +99,9 @@ export const Reel: React.FC<{timeline: Timeline}> = ({timeline: tl}) => {
 			</AbsoluteFill>
 			{inTransition ? <AbsoluteFill style={{background: '#fff', opacity: 0.4 * (1 - tp)}} /> : null}
 
-			<Annotations items={tl.annotations} />
+			<OnLightBg.Provider value={scene.bg === 'light'}>
+				<Annotations items={tl.annotations} />
+			</OnLightBg.Provider>
 			<Captions groups={tl.captions} words={tl.words} />
 
 			<Audio src={staticFile(tl.voice)} />

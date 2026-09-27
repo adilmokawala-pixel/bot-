@@ -1,5 +1,8 @@
-import React from 'react';
+import React, {createContext, useContext} from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
+
+/** true while the cream (light) scene is on screen: light glass would be unreadable there, so it turns dark. */
+export const OnLightBg = createContext(false);
 
 /** A light sweep that crosses the panel once, starting at `from` (frame). */
 export const Sheen: React.FC<{from: number; radius: number; duration?: number}> = ({from, radius, duration = 16}) => {
@@ -33,7 +36,8 @@ type GlassProps = {
 
 /** Frosted glass panel with bevel. dark = captions, light = annotations. */
 export const Glass: React.FC<GlassProps> = ({tone, radius, style, sheenFrom, children}) => {
-	const dark = tone === 'dark';
+	const onLight = useContext(OnLightBg);
+	const dark = tone === 'dark' || onLight;
 	return (
 		<div
 			style={{
