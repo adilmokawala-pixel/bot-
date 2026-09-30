@@ -41,7 +41,7 @@ MediaPipe selfie_multiclass_256x256، mask = 1 − background، تحليل عل�
 | light | #F4EFE6، dotted grid، مسار برتقالي كيترسم مع labels زجاجية |
 | image | صورة توضيحية مورا الشخص (Ken Burns + vignette برتقالي + label) |
 
-فالخلفيات المبدلة: الشخص scale 0.9، translateY 170px، drop-shadow 0 30px 50px rgba(0,0,0,.35).
+فالخلفيات المبدلة: الشخص scale 0.9، translateY 110px، drop-shadow 0 30px 50px rgba(0,0,0,.35).
 الانتقال: circle reveal فـ7 frames من 50% 42%، scale 1.08→1، flash أبيض 40%، و whoosh كيبدا 0.2s قبل.
 
 ## 7) الكاميرا
